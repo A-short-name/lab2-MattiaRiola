@@ -29,10 +29,40 @@
                 class="d-inline-block align-top">ToDo Manager</a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <form class="form-inline my-2 my-lg-0 mx-lg-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
+            <!-- search box is hidden in small size screen -->
+            <div class="d-none d-lg-block">
+                <form class="form-inline my-2 my-lg-0 mx-lg-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+            <!-- list of the filters in the collpased menu -->
+            <div class="d-lg-none">
+
+                <ul class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                        All
+                        <span class="badge badge-primary badge-pill">3</span>
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Important
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Today
+                        <span class="badge badge-primary badge-pill"></span>
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Next 7 days
+                        <span class="badge badge-primary badge-pill"></span>
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Private
+                        <span class="badge badge-primary badge-pill">1</span>
+                    </button>
+                </ul>
+            </div>
         </div>
+
         <div class="navbar-nav mt-0 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="lightgrey" class="bi bi-person-circle"
                 viewBox="0 0 16 16">
@@ -41,6 +71,7 @@
                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
             </svg>
         </div>
+
 
     </nav>
 
@@ -116,26 +147,8 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2 mr-5 ml-0 d-none d-lg-block">
 
-            </div>
-            <div class="col-8 ml-0">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </div>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Text input with checkbox">
-                </div>
-            </div>
-        </div>
-   
-
-
-            <button type="button" class="btn d-flex radius rounded-circle m-3">+</button>
-
+        <button type="button" class="btn d-flex radius rounded-circle m-3">+</button>
 
     </div>
 
