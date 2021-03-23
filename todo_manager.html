@@ -20,47 +20,21 @@
 
 
     <!--- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light personal-bg" style="background-color:green">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+    <nav class="navbar navbar-expand-lg navbar-dark personal-bg" style="background-color:green">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filter_menu"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"><img src="TODO_Logo.png" alt="" width="30" height="30"
                 class="d-inline-block align-top">ToDo Manager</a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <!-- search box is hidden in small size screen -->
-            <div class="d-none d-lg-block">
-                <form class="form-inline my-2 my-lg-0 mx-lg-auto">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-            <!-- list of the filters in the collpased menu -->
-            <div class="d-lg-none">
 
-                <ul class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-                        All
-                        <span class="badge badge-primary badge-pill">3</span>
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">
-                        Important
-                        <span class="badge badge-primary badge-pill">1</span>
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">
-                        Today
-                        <span class="badge badge-primary badge-pill"></span>
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">
-                        Next 7 days
-                        <span class="badge badge-primary badge-pill"></span>
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">
-                        Private
-                        <span class="badge badge-primary badge-pill">1</span>
-                    </button>
-                </ul>
-            </div>
+
+        <!-- search box is hidden in small size screen -->
+        <div class="d-none d-lg-block mx-lg-auto">
+            <form class="form-inline my-2 my-lg-0 mx-lg-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
         </div>
 
         <div class="navbar-nav mt-0 ">
@@ -79,8 +53,7 @@
     <!-- Content-->
     <div class="container-fluid">
         <div class="row my-2">
-
-            <div class="col-2 mr-5 ml-0 d-none d-lg-block">
+            <aside class="collapse d-sm-block col-12 col-sm-3" id="filter_menu">
                 <ul class="list-group">
                     <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
                         All
@@ -103,8 +76,8 @@
                         <span class="badge badge-primary badge-pill">1</span>
                     </button>
                 </ul>
-            </div>
-            <div class="col-8 ml-0">
+            </aside>
+            <div class="col-12 col-sm-9 ml-0">
                 <h1>All</h1>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item trans">
